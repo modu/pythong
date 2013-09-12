@@ -28,10 +28,15 @@ def takeSingleInput():
     DecimalValue = input("Please input Decimal Value to be converted to Hex")
     print "Converted hex value is "
     print hex(DecimalValue)
+def plainNumberConvert(Range):
+    for i in range(Range):
+        print hex(i)
+
 
 def main():
     print "In the Main Function"
-    takeSingleInput()
+    plainNumberConvert(32)
+    #takeSingleInput()
     #ConvertFromString()
 if __name__ == '__main__':
     main()
